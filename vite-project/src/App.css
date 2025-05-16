@@ -1,0 +1,229 @@
+
+
+.dados{
+  color: #000;
+
+  & h2{
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 0px;
+    color:#404E82 ;
+  }
+  & p{
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+  }
+  & a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+  }
+  
+}
+.t{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  & span{
+    
+    margin-left: 16px;
+    
+  }
+}
+.dado{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid 3px #CFDCEF;
+  font-weight: bold;
+
+  & h4{
+    font-size: 13px;
+    color: #333333;
+
+  }
+}
+
+.noticiasCadastradas{
+  height: 100px;
+  
+}
+
+.turmasSemestre{
+  
+  display: grid;
+  grid-template-columns: repeat(1, 2fr);
+  justify-content: space-between;
+  
+  
+
+
+  & .p1{
+    margin: 0px;
+   
+  }
+  & .p2{
+    
+    display: flex;
+    justify-content: space-between;
+    background: #DEDFE3;
+    margin: 0px;
+    border-top: #CFDCEF solid 1px;
+    border-bottom: #CFDCEF solid 1px;
+  }
+  & .continuar{
+   
+    display: none;
+  }
+  .parar{
+    background: #DEDFE3;
+    margin-right: 10px;
+
+  }
+}
+
+.turmas{
+height: 200px;
+}
+.turmasS{
+  display: flex;
+  gap: 20px;
+  height: 100px;
+}
+.forum{
+  padding: 15px;
+
+  & h1{
+    font-size: 13px;
+  
+    font-weight: bold;
+  }
+  & p{
+      background:#fcfce3 ;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 12px;
+    
+    }
+  }
+  
+  .b{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px;
+    
+    & h4{
+      font-size: 10px;
+    }
+    
+  }
+  .dad{
+    display: flex;
+    justify-content: space-between;
+    
+    & h4{
+      font-size: 12px;
+      
+      
+    }
+  }
+
+  .x{
+    h2 {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+  
+
+
+.forumLinks{
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid 3px #CFDCEF;
+  font-weight: bold;
+ 
+  & a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 13px;
+    color:#123f88;
+    text-decoration: none;
+  }
+
+}
+.forumLinks a:hover{
+  color: #374370;
+  text-decoration: underline;
+}
+.espaco{
+  border-bottom: solid 3px #CFDCEF;
+}
+
+.turmas1{
+  text-align: center;
+}
+.turmas0{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aqua;
+  text-align: center;
+  margin-top: 10px;
+}
+
+table{
+  
+  width: 100%;
+  
+  margin-top: 20px;
+  text-align: left;
+  padding-top: 5px;
+  background-color: white;
+  color: #070707;
+
+  
+    
+  & p{
+    font-weight: bold;
+    text-align: left;
+    padding-top: 10px;
+    color: #000;
+    
+    
+  }
+  & td{
+    text-align: left;
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: solid 2px #CFDCEF;
+    
+  }
+  
+}
+
+
+
+
+.x{
+
+  &  td{
+    color:#003395 ;
+    font-weight: bold;
+    font-size:12px;
+  }
+}
+
+
+
+
+
+
