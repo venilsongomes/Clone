@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import './Style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,14 +12,36 @@ import minitoria from './assets/monitoria.png';
 import outros from './assets/outros.png';
 import pesquisa from './assets/pesquisa.png';
 import extensao from './assets/extensao.png';
+import { Alert } from 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 
 
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [GetParar , SetParar] = useState(0)
+  const [GetContinuar , SetContinuar] = useState()
+   
 
+  function Parar() {
+
+    if(GetParar){
+      SetParar(false);
+      
+    }else{
+        SetParar(true);
+       
+    }
+
+
+    
+  }
+
+  useEffect(() => {
+    
+  }, [GetParar]);
+
+  
 
   return (
     <>
@@ -182,8 +204,8 @@ function App() {
 
 
               <div className='turmasSemestre'>
-                <p className='p1'>  Turmas Semestre</p>
-                <p className='p2'>  <p>Ultimas Atualizações</p><button className='parar'> Parar </button>  <button className='continuar'>Continuar</button>      </p>
+                <p className='p1'>Turmas Semestre</p>
+                <p className='p2'><p>Ultimas Atualizações</p> <button id='parar' onClick={Parar} className='parar'> {GetParar ? "<<Parar>>": "<<Continuar>>"} </button> </p>
               </div>
 
               <table>
